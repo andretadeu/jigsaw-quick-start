@@ -15,7 +15,7 @@ javac -d bin/org.astro \
     $(find src/org.astro -name '*.java') || exit
 
 javac -d bin/com.greetings \
-    -modulepath bin \
+    --module-path bin \
     $(find src/com.greetings -name '*.java') || exit
 
 find bin -type f
@@ -52,5 +52,5 @@ task
 set -x
 
 java \
-    -modulepath lib \
+    --module-path lib \
     -m com.greetings
