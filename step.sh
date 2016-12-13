@@ -15,7 +15,7 @@ javac -d bin/com.socket \
     $(find src/com.socket -name '*.java') || exit
 
 javac -d bin/com.greetings \
-    -modulepath bin \
+    --module-path bin \
     $(find src/com.greetings -name '*.java') || exit
 
 find bin -type f
@@ -51,5 +51,5 @@ task
 set -x
 
 java \
-    -modulepath lib \
+    --module-path lib \
     -m com.greetings
