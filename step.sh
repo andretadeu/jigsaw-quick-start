@@ -41,5 +41,5 @@ task
 set -x
 
 java \
-    -modulepath lib \
-    -m com.greetings
+    --module-path bin \
+    -m com.greetings/com.greetings.Main
