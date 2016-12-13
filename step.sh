@@ -36,5 +36,5 @@ task
 set -x
 
 java \
-    -modulepath bin \
+    --module-path bin \
     -m com.greetings/com.greetings.Main
